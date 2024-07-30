@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mabele</title>
+    <style>
+      body {
+        background: #f0ece2;
+      }
+
+      h1 {
+        text-align: center;
+        color: #596e79;
+        background: linear-gradient(
+          666px at 0.4% 48%,
+          rgb(202, 204, 227) 0%,
+          rgb(89, 89, 99) 97.5%
+        );
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+      }
+
+      h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 10px;
+        font-size: 1.8em;
+      }
+
+      h3 {
+        text-align: center;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 20px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 15px;
+        margin: 20px 0 10px;
+      }
+
+      .learn-more {
+        color: #596e79;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: transparent;
+        color: #596e79;
+        font-size: 18px;
+        padding: 15px 20px;
+        border-radius: 6px;
+        border: none;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        color: #fff;
+        background: #596e79;
+      }
+
+      .footer {
+        text-align: center;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mabele!</h1>
+      <h2>Mabele aka sorghum, welcome to the Sorghum Agenda.</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/136/326/original/download.jpg?1722361198"
+        alt="Mabele"
+        width="400"
+      />
+      <h3>What is sorghum?</h3>
+      <p>
+        Sorghum is one of the most important cereal grains for food consumption
+        in Africa. Sorghum is as nutritious as maize and has high drought
+        tolerance. This makes it a resilient option for farmers to plant under
+        changing climatic conditions. Sorghum also has traditional significance.
+        Umqombothi or utshwala is a beer traditionally made from maize and
+        sorghum by the family matriarch for special occasions. As well as
+        traditional beer, the Tswana people of South Africa also make a
+        fermented porridge (ting ya mabele) from sorghum.
+        <br />
+        <a
+          class="learn-more"
+          href="https://theconversation.com/amazing-ting-south-africa-must-reinvigorate-sorghum-as-a-key-food-before-its-lost-185552"
+          target="_blank"
+        >
+          <strong>Learn more</strong>
+        </a>
+      </p>
+      <button class="recipes-button">Mabele Recipes 👩‍🍳</button>
+      <p class="footer">This page was built by Leseli Ntiise</p>
+    </div>
+    <script>
+      function recipes() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+
+        alert(
+          "Thank you, " +
+            name +
+            "! We will send you a few recipes to try at home."
+        );
+      }
+
+      let recipesButton = document.querySelector(".recipes-button");
+      recipesButton.addEventListener("click", recipes);
+    </script>
+  </body>
+</html>
